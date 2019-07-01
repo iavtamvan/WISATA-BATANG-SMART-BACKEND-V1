@@ -54,9 +54,9 @@ VALUE ('$nama_account', '$email_account', '$no_hp_account', '$foto_front_account
 
     }
 } else {
-    $response["error"] = true;
-    $response["error_msg"] = "404";
+        $response["error"] = true;
+        $response["error_msg"] = "404";
 
-    echo json_encode($response);
+        echo json_encode($response);
 }
 ?>
