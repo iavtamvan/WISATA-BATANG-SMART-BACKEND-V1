@@ -33,6 +33,7 @@ if ($_POST){
     $kab_account = "".$user['kab_account'];
     $foto_front_account = "".$user['foto_front_account'];
     $foto_back_account = "".$user['foto_back_account'];
+    $username = "".$user['username'];
     $ttd_account = "".$user['ttd_account'];
     $lat_account = "".$user['lat_account'];
     $long_account = "".$user['long_account'];
@@ -57,6 +58,7 @@ if ($_POST){
         $response["lat_account"] = $lat_account;
         $response["long_account"] = $long_account;
         $response["status_account"] = $status_account;
+        $response["username"] = $username;
 
         echo json_encode($response);
         // echo "Sukses";
